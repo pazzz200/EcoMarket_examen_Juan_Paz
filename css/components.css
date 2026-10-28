@@ -1,0 +1,235 @@
+/* =========================================
+   Piezas que se repiten: botones y tarjetas
+   ========================================= */
+
+/* ---------- BOTON ---------- */
+.btn {
+  display: inline-block;
+  background-color: var(--principal);
+  color: var(--texto-claro);
+  border: 2px solid var(--acento);
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: var(--acento);
+  color: var(--texto);
+}
+
+/* ---------- TARJETA DE PRODUCTO ---------- */
+.card {
+  background-color: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background-color: var(--superficie);
+  padding: 10px;
+}
+
+.card h3 {
+  margin: 15px 15px 5px;
+  color: var(--principal);
+}
+
+.card p {
+  margin: 0 15px 15px;
+  color: var(--texto-suave);
+  font-size: 0.95rem;
+}
+
+/* ---------- BUSCADOR ---------- */
+.buscador {
+  display: flex;
+  background-color: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.buscador:focus-within {
+  border-color: var(--acento);
+}
+
+.buscador input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+}
+
+.buscador button {
+  border: none;
+  background-color: var(--principal);
+  padding: 0 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* ---------- TARJETA DEL CATALOGO ---------- */
+.card .precio {
+  color: var(--principal);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Etiqueta de stock */
+.etiqueta {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.disponible {
+  background-color: #e3f6ea;
+  color: var(--principal);
+}
+
+.agotado {
+  background-color: #f6e3e3;
+  color: #a33a3a;
+}
+
+/* ---------- PRINCIPIOS Y VALORES ---------- */
+.principio {
+  background-color: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 15px;
+  padding: 25px 20px;
+  text-align: center;
+}
+
+.principio-icono {
+  display: block;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.principio h3 {
+  color: var(--principal);
+  margin-bottom: 8px;
+}
+
+.principio p {
+  color: var(--texto-suave);
+  font-size: 0.95rem;
+}
+
+/* ---------- TESTIMONIOS ---------- */
+.testimonio {
+  background-color: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+}
+
+.testimonio p {
+  color: var(--texto-suave);
+  font-style: italic;
+}
+
+.testimonio .estrellas {
+  color: #f1c40f;
+  font-size: 1.3rem;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.testimonio h4 {
+  color: var(--principal);
+  margin-top: 10px;
+}
+
+/* ---------- FORMULARIO ---------- */
+.formulario,
+.contacto-info {
+  background-color: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.campo {
+  margin-bottom: 20px;
+}
+
+.campo label {
+  display: block;
+  font-weight: bold;
+  color: var(--principal);
+  margin-bottom: 5px;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--borde);
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.campo textarea {
+  resize: vertical;
+}
+
+/* Validacion visual: rojo si esta vacio o mal escrito, verde si esta bien */
+.campo input:invalid,
+.campo textarea:invalid {
+  border-color: #e74c3c;
+}
+
+.campo input:valid,
+.campo textarea:valid {
+  border-color: var(--acento);
+}
+
+.formulario .btn {
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* ---------- INFO DE CONTACTO ---------- */
+/* Caja verde para que resalte al lado del formulario */
+.contacto-info {
+  background-color: var(--principal);
+  border: none;
+  color: var(--texto-claro);
+}
+
+.contacto-info h2 {
+  margin-bottom: 20px;
+}
+
+.dato {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dato:last-child {
+  border-bottom: none;
+}
+
+.dato strong {
+  display: block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--fondo);
+}

@@ -1,0 +1,53 @@
+/* =========================================
+   Reset, variables (colores) y tipografia
+   ========================================= */
+
+/* Variables: guardamos los colores para reusarlos */
+:root {
+  --principal: #27ae60;       /* verde oscuro (requerimiento) */
+  --acento: #2ecc71;          /* verde claro (requerimiento) */
+  --fondo: #f5f5dc;           /* beige (requerimiento) */
+  --superficie: #ffffff;      /* blanco para tarjetas */
+  --borde: #dfe6cf;
+  --texto: #2b2b2b;
+  --texto-suave: #6b6b6b;
+  --texto-claro: #f8f5f0;     /* texto sobre fondo oscuro */
+}
+
+/* Reset: quitamos margenes que trae el navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--fondo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Los campos y botones usan la misma fuente de la pagina */
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
